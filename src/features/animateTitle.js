@@ -2,14 +2,15 @@ import gsap from 'gsap'
 
 function animateTitle() {
   // Get the element from the DOM
-  const h1Inner = document.querySelector('span.h1-inner')
+  const span = document.querySelector('.blue')
 
   // If it exists, play the aniamtion
-  if (h1Inner) {
-    gsap.to(h1Inner, {
-      y: 0,
-      duration: 0.6,
-      ease: 'elastic.out(1, 0.6)',
+  if (span) {
+    gsap.to(span, {
+      color: 'blue',
+      duration: 3,
+      delay: 1,
+      ease: 'Power1.easeOut',
     })
   }
 }

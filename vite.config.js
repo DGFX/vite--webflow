@@ -1,9 +1,13 @@
 import { defineConfig } from 'vite'
 import eslintPlugin from 'vite-plugin-eslint'
+import vitePluginString from 'vite-plugin-string'
 
 // vite.config.js
 export default defineConfig({
-  plugins: [eslintPlugin({ cache: false })],
+  plugins: [
+    eslintPlugin({ cache: false }),
+    vitePluginString()
+  ],
   server: {
     host: 'localhost',
     cors: '*',

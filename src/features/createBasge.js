@@ -2,7 +2,8 @@ function createBadge() {
   // Create the badge
   const badge = document.createElement('div')
   badge.classList.add('js-badge')
-  badge.innerText = 'Siemanoo'
+  // badge.innerText = 'Strona w produkcji 🛠️'
+  badge.innerText = 'Strona na Netlify 🌍'
 
   // Add click envent to remove the badge from the DOM
   badge.addEventListener('click', (event) => {
